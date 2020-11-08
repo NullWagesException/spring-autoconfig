@@ -8,7 +8,6 @@ import java.lang.annotation.*;
 /**
  * @Author: nullWagesException
  * @Date: 2020-11-08 11:14
- * @Description:
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
