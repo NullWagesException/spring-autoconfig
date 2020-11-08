@@ -2,6 +2,7 @@ package priv.zhengfa.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import priv.zhengfa.annotation.EnableAutoConfig;
 import priv.zhengfa.pojo.User;
 
 /**
@@ -10,6 +11,7 @@ import priv.zhengfa.pojo.User;
  * @Description:
  */
 @Configuration
+@EnableAutoConfig
 public class SpringConfig {
 
     @Bean

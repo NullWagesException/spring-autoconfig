@@ -1,0 +1,12 @@
+# Created by .ignore support plugin (hsz.mobi)
+.gitignore
+.idea/.gitignore
+.idea/compiler.xml
+.idea/inspectionProfiles/
+.idea/jarRepositories.xml
+.idea/misc.xml
+.idea/uiDesigner.xml
+.idea/vcs.xml
+spring-autoconfig.iml
+src/test/
+target/
