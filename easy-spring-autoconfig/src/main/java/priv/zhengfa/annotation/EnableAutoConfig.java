@@ -9,9 +9,10 @@ import java.lang.annotation.*;
  * @Author: nullWagesException
  * @Date: 2020-11-08 11:14
  */
-@Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
 @Documented
+@Inherited
 @Import(value = {EnableAutoConfigRegistrar.class})
 public @interface EnableAutoConfig {
 }

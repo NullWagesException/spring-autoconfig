@@ -6,7 +6,13 @@
 
     <groupId>priv.zhengfa</groupId>
     <artifactId>spring-autoconfig</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>easy-mybatis-spring-boot-starter</module>
+        <module>easy-mybatis-spring-boot-autoconfig</module>
+        <module>easy-spring-autoconfig</module>
+    </modules>
 
     <dependencies>
         <dependency>
@@ -25,6 +31,18 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.12</version>
+        </dependency>
+
+        <dependency>
+            <groupId>priv.zhengfa</groupId>
+            <artifactId>easy-mybatis-spring-boot-starter</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.1.22</version>
         </dependency>
     </dependencies>
 </project>
