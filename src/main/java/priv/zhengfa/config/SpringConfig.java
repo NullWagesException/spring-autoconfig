@@ -26,8 +26,8 @@ public class SpringConfig {
     public DataSource dataSource() {
         DruidDataSource dataSource = new DruidDataSource();
         dataSource.setUsername("root");
-        dataSource.setPassword("yy520520###");
-        dataSource.setUrl("jdbc:mysql://111.230.150.200:3306/springtrans");
+        dataSource.setPassword("xxx");
+        dataSource.setUrl("jdbc:mysql://xxx/springtrans");
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         return dataSource;
     }
