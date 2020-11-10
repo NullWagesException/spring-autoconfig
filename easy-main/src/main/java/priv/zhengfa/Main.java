@@ -2,6 +2,7 @@ package priv.zhengfa;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import priv.zhengfa.config.SpringConfig;
+import priv.zhengfa.mapper.UserMapper;
 import priv.zhengfa.pojo.User;
 
 /**
@@ -16,8 +17,9 @@ public class Main {
         AnnotationConfigApplicationContext context =
                 new AnnotationConfigApplicationContext(SpringConfig.class);
 
-        User bean = context.getBean(User.class);
-        System.out.println(bean);
+        UserMapper userMapper = context.getBean(UserMapper.class);
+        User user = userMapper.selectByid(1);
+        System.out.println(user.getName());
 
     }
 

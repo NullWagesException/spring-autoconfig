@@ -1,8 +1,9 @@
 package priv.zhengfa.config;
 
-import com.alibaba.druid.pool.DruidDataSource;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import priv.zhengfa.annotation.EnableAutoConfig;
 import priv.zhengfa.pojo.User;
 
@@ -15,6 +16,7 @@ import javax.sql.DataSource;
  */
 @Configuration
 @EnableAutoConfig
+@MapperScan("priv.zhengfa.mapper")
 public class SpringConfig {
 
     @Bean
@@ -24,8 +26,8 @@ public class SpringConfig {
 
     @Bean
     public DataSource dataSource() {
-        DruidDataSource dataSource = new DruidDataSource();
-        dataSource.setUsername("root");
+        DriverManagerDataSource dataSource = new DriverManagerDataSource();
+        dataSource.setUsername("xxx");
         dataSource.setPassword("xxx");
         dataSource.setUrl("jdbc:mysql://xxx/springtrans");
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
